@@ -5,7 +5,8 @@ import streamlit as st
 # Load the Excel file into a Pandas dataframe
 df = pd.read_csv('hobbylist.csv')
 st.title("Hobby Generator")
-st.write(" 🕵️ Want a new hobby this year ? Hop on to the hobby generator and randomly pick a hobby!😎 ")
+st.write(" 🕵️ Want a new hobby this year ?") 
+st.write(" Hop on to the hobby generator and randomly pick a hobby!😎 ")
 # Create a dropdown menu for selecting a hobby category
 category = st.sidebar.selectbox('Select a category:', ['All'] + sorted(set(df['Type'])))
 
